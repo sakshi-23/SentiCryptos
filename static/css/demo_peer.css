@@ -77,19 +77,9 @@ a:hover{
     display:none;
 
 }
-td:hover{
- background:gray;
-}
 
-
-td{
-
-    background: white;
-    border: 2px solid #383838;
-    color: black;
-    font-size: 12px;
-    padding: 6px;
-
+.pending tr:hover{
+    color:black;
 }
 
 .logo{
@@ -99,4 +89,45 @@ td{
 
 .container-fluid{
     padding-left: 2px;
+}
+
+.card{
+display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color: rgba(61, 61, 61, 0.87);
+    background: #ffffff;
+}
+
+.card .card-header{
+    margin: -20px 15px 0;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: #727272;
+    color: white;
+
+}
+
+.Waiting{
+    color:orange;
+}
+
+
+.In-Process,.Funded{
+    color:green;
+}
+
+.add-loan{
+    cursor:pointer;
+}
+
+.modal{
+    color:black;
+}
+
+.token-name span.form-control{
+    display:none;
 }

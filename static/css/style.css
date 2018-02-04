@@ -169,9 +169,19 @@ position: relative;
     margin-top: -70px;
 }
 
-.icon{
-color: #444240;
-    margin: -57px 25px;
-    position: absolute;
+.icon{color: #FF9800;margin: -13px;position: absolute;}
 
+
+.card-holder .card-header{
+    color: black;
+    background: white;
+}
+
+th.active{
+    color:black;
+    font-weight:bold;
+}
+
+th{
+    cursor:pointer;
 }

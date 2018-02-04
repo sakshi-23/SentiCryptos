@@ -23,7 +23,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body >
 
     <div class="wrapper">
         <div class="loader hidden" ></div>
@@ -51,18 +51,22 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> SentiCryptos </a>
+                       <span class=""> <a class="navbar-brand logo" href="#"> SentiCryptos </a></span>
+                        <span>
+                             <a class="navbar-brand" href="/"> Trading </a>
+                             <a class="navbar-brand" href="/peer-lend"> Peer Lending </a>
+                        </span>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                             <li>
-                               <div style="margin-top:7px"> <span>Show Predictions</span>
-                                     <label class="switch">
-                                      <input id="predicted" type="checkbox" >
-                                      <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </li>
+                             <!--<li>-->
+                               <!--<div style="margin-top:7px"> <span>Show Predictions</span>-->
+                                     <!--<label class="switch">-->
+                                      <!--<input id="predicted" type="checkbox" >-->
+                                      <!--<span class="slider round"></span>-->
+                                    <!--</label>-->
+                                <!--</div>-->
+                            <!--</li>-->
                             <li>
                                  <a href="#"  id="showDashboard" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">dashboard</i>
@@ -89,7 +93,7 @@
                          <div id="BTC" class="col-lg-2 col-md-2 col-sm-2 symbols">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="">
-                                   <i class="material-icons">info</i>
+                                   <img src="static/images/logos/btc.svg">
                                 </div>
                                 <div class="card-content">
                                     <p class="category">BITCOIN</p>
@@ -108,7 +112,7 @@
                         <div id="ETH" class="col-lg-2 col-md-2 col-sm-2 symbols">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="">
-                                   <i class="material-icons">info</i>
+                                    <img src="static/images/logos/eth.png">
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Ethereum</p>
@@ -127,7 +131,7 @@
                            <div id="XRP" class="col-lg-2 col-md-2 col-sm-2 symbols">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="">
-                                   <i class="material-icons">info</i>
+                                   <img src="static/images/logos/xrp.png">
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Ripple</p>
@@ -146,13 +150,13 @@
                         <div id="XLM" class="col-lg-2 col-md-2 col-sm-2 symbols">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="">
-                                   <i class="material-icons">info</i>
+                                   <img src="static/images/logos/xlm.png">
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Stellar</p>
                                     <h4 class="price" >$<span class="price_usd"></span>
                                     <span class="small predictions visuallyhidden hidden"></span>
-                                    </h4>
+                                  </h4>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -166,7 +170,7 @@
                          <div id="ADA" class="col-lg-2 col-md-2 col-sm-2 symbols">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="">
-                                   <i class="material-icons">info</i>
+                                   <img src="static/images/logos/ada.png">
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Cardano</p>
@@ -185,7 +189,7 @@
                          <div id="LTC" class="col-lg-2 col-md-2 col-sm-2 symbols">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="">
-                                   <i class="material-icons">info</i>
+                                   <img src="static/images/logos/ltc.png">
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Litecoin</p>
@@ -202,7 +206,7 @@
                             </div>
                         </div>
 
-
+                    <div id="preview"></div>
 
                     </div>
                     <div class="row">
@@ -262,7 +266,7 @@
                      <div class="row">
                         <div class="col-lg-6 ">
                             <div class="card card-holder">
-                                <div class="card-header">
+                                <div class="card-header ">
                                     <div class="pull-right">
 
                                         <i class="material-icons icon">compare_arrows</i>

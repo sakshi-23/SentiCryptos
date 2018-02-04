@@ -29,6 +29,9 @@ feed_collection = db['feed_new']
 
 port = int(os.getenv('PORT', 8000))
 
+
+
+
 @app.route('/entry')
 def entry():
     return render_template('entry.html')
@@ -37,9 +40,14 @@ def entry():
 def logs():
     return render_template('logs.html')
 
-@app.route('/dashboard')
+@app.route('/')
 def dashboard():
     return render_template('dashboard.html')
+
+
+@app.route('/peer-lend')
+def peer():
+    return render_template('peer.html')
 
 @app.route('/top_feed')
 def top_feed():
@@ -93,6 +101,14 @@ def vote():
 def create():
     n = request.args.get("n")
     return json.dumps(create_n_records(int(n)))
+
+@app.route('/get_min_tokens')
+def token():
+    eth = float(request.args.get("eth"))
+    currency = request.args.get("currency")
+    return json.dumps(get_min_tokens(eth,currency))
+
+
 
 
 def populate_news_feed():

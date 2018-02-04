@@ -310,11 +310,13 @@ $(document).ready( function() {
         neg=""
         data=JSON.parse(data)
         for (var i in data["top_positive"]){
-            pos+="<tr><td>"+data["top_positive"][i]["headline"]+"</td></tr>"
+
+
+            pos+="<tr><td>"+'<a target="_blank" href="'+data["top_positive"][i]["url"]+'">'+data["top_positive"][i]["headline"]+"</a>"+"</td></tr>"
 
         }
         for (var i in data["top_negative"]){
-            neg+="<tr><td>"+data["top_negative"][i]["headline"]+"</td></tr>"
+            neg+="<tr><td>"+'<a target="_blank" href="'+data["top_negative"][i]["url"]+'">'+data["top_negative"][i]["headline"]+"</a>"+"</td></tr>"
 
         }
         $(".negative").html(neg)
@@ -332,7 +334,8 @@ $(document).ready( function() {
         neg=""
         data=JSON.parse(data)
         dataid=data["id"]
-        $(".tweet-content").html(data["headline"])
+
+        $(".tweet-content").html('<a target="_blank" href="'+data["url"]+'">'+data["headline"]+"</a>")
 
     });
     }
@@ -344,7 +347,8 @@ $(document).ready( function() {
 
 
 
-        $(".card-holder").on("swiperight",".card-header",function(e){
+
+    $(".card-holder").on("swiperight",".card-header",function(e){
          $("#fivenot").html("");
          $("#fivenot").addClass("hidden");
 
