@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import os
 from os import environ
+from twitter import *
 import json
 from pymongo import MongoClient
 
@@ -10,6 +11,7 @@ from pymongo import MongoClient
 
 db_name = 'heroku_0t309l33'
 app = Flask(__name__)
+
 
 
 # Setup MongoDB
@@ -37,6 +39,22 @@ def logs():
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+@app.route('/feed')
+def feed():
+    return "work in progress"
+
+@app.route('/vote/<id>/<sentiment>')
+def vote():
+    return "work in progress"
+
+
+def populate_news_feed():
+    # Use twitter api to get tweets related to crypto
+    # currency and run through a pipeline which identifies
+    # whether its a market mover
+    return "work in progress"
+
 
 
 if __name__ == '__main__':
