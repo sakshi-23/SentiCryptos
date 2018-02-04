@@ -31,6 +31,6 @@ def create_n_records(n):
 def get_min_tokens(eth, currency):
 	rate = prices_json[currency]
 	tokens = rate*eth
-	return {"tokens":tokens, "rate":rate,"eth":tokens/rate}
+	return {"tokens":tokens, "rate":rate, "eth":tokens/rate}
 
 
