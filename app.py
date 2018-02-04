@@ -3,6 +3,7 @@ import os
 from os import environ
 from twitter import *
 import json
+import pymongo
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
@@ -39,6 +40,27 @@ def logs():
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+@app.route('/top_feed')
+def top_feed():
+    pos_feed = feed_collection.find().sort('pos_count', pymongo.DESCENDING).limit(5)
+    pres = []
+    for pfeed in pos_feed:
+        pfeed['id'] = str(pfeed['_id'])
+        del(pfeed['_id'])
+        pres.append(pfeed)
+
+    nres = []
+    neg_feed = feed_collection.find().sort('neg_count', pymongo.DESCENDING).limit(5)
+    for nfeed in neg_feed:
+        nfeed['id'] = str(nfeed['_id'])
+        del(nfeed['_id'])
+        nres.append(nfeed)
+
+    res = {}
+    res['top_positive'] = pres
+    res['top_negative'] = nres
+    return json.dumps((res))
 
 @app.route('/feed')
 def feed():
