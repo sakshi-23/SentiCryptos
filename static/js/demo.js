@@ -272,75 +272,44 @@ demo = {
 
 $(document).ready( function() {
 
+//    setInterval(function(){
+         $.get("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,LTC,ETH,XLM,ADA,XRP&tsyms=USD", function(data, status){
 
-    $("#predicted").on("change",function(){
-    var box=  $(".predictions")
-         if($(this).is(':checked')) {
-        demo.updateDocumentationCharts();
-//        .removeClass("hidden");
-//         $(".predictions").toggleClass('visuallyhidden');
-        box.removeClass('hidden');
-            setTimeout(function () {
-              box.removeClass('visuallyhidden');
-            }, 20);
-        }
-        else{
-        demo.initDashboardPageCharts();
-       box.addClass('visuallyhidden');
-
-    box.one('transitionend', function(e) {
-
-      box.addClass('hidden');
-
-    });
-        }
+           for (var val in data["RAW"]){
 
 
-    })
+            $("#"+val).find(".price_usd").html(data["RAW"][val]["USD"]["PRICE"].toFixed(2))
+             $("#"+val).find(".vol").html(data["DISPLAY"][val]["USD"]["VOLUME24HOUR"])
+             if (parseFloat(val["CHANGEPCTDAY"])>0)
+             {
+                change = data["RAW"][val]["USD"]["CHANGEPCTDAY"]+'% <i class="fa fa-long-arrow-up"></i>'
+                $("#"+val).find(".change").removeClass("text-danger")
+                $("#"+val).find(".change").addClass("text-success")
+                $("#"+val).find(".card-header").attr("data-background-color","green")
 
-    $("#searchDefects").on("change",function(){
-        $("#searchDefectsValue").removeClass("hidden");
-    });
 
-    $("#notificationId").on("click",function(){
-        $("#fivenot").hide();
-     });
+             }
+             else{
+                change = (parseFloat(data["RAW"][val]["USD"]["CHANGEPCTDAY"])*-1).toFixed(2)+'% <i class="fa fa-long-arrow-down"></i>'
+                $("#"+val).find(".change").addClass("text-danger")
+                $("#"+val).find(".change").removeClass("text-success")
+                 $("#"+val).find(".card-header").attr("data-background-color","red")
+             }
 
-    $("#submit").on("click",function(){
-        $("#showDashboardResults").addClass("hidden");
-        $("#showDefects").removeClass("hidden");
-        $(".loader").removeClass("hidden");
-         $.get("/all_defects/SFO", function(data, status){
-           var pending="",completed="",deferred="";
-           data= JSON.parse(data);
-            $(".loader").addClass("hidden");
-           for (var i in data){
-                var val=data[i];
-                val.name=val.completed_person_name
-                if(data[i].status=="deferred"){
-                    deferred+='<tr><td>'+val.timestamp.substring(0,16)+'</td><td>'+val.aircraft_id+'</td><td>'+val.description+'</td><td>'+val.name+'</td><td><button class="btn btn-sm btn-default">Action<i class="material-icons">play_arrow</i></button></td></tr>'
-
-                }
-                else if (data[i].status=="created"){
-                    pending+='<tr><td>'+val.timestamp.substring(0,16)+'</td><td>'+val.aircraft_id+'</td><td>'+val.description+'</td><td>'+val.source+'</td><td><button class="btn btn-sm btn-default">Action<i class="material-icons">play_arrow</i></button></td></tr>'
-
-                }
-                else{
-
-                    completed+='<tr><td>'+val.timestamp.substring(0,16)+'</td><td>'+val.aircraft_id+'</td><td>'+val.description+'</td><td>'+val.name+'</td><td>'+val.completed_timestamp+'</td></tr>'
-
-                }
-
+              $("#"+val).find(".change").html(change)
 
            }
-           $(".completed").html(completed);
-           $(".pending").html(pending);
-           $(".deferred").html(deferred);
+           });
 
-         });
-    })
+//    },1000)
 
-    $("#showDashboard").on("click",function(){
-        $("#showDashboardResults").removeClass("hidden");
-    })
+
+//    $("")
+
+
+
+
+
+
+
 });
