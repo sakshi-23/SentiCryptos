@@ -4,12 +4,12 @@ from os import environ
 from twitter import *
 import json
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 
 
 
-
-db_name = 'heroku_0t309l33'
+db_name = 'heroku_z9q1btk4'
 app = Flask(__name__)
 
 
@@ -23,7 +23,7 @@ else:
         uri = json.load(f)['uri']
 client = MongoClient(uri)
 db = client[db_name]
-
+feed_collection = db['feed']
 #------------------------------
 
 port = int(os.getenv('PORT', 8000))
@@ -42,11 +42,32 @@ def dashboard():
 
 @app.route('/feed')
 def feed():
-    return "work in progress"
+    feed = feed_collection.find()
+    feedr = []
+    for ifeed in feed:
+        ifeed['id'] = str(ifeed['_id'])
+        del(ifeed['_id'])
+        feedr.append(ifeed)
+    return json.dumps(feedr)
 
-@app.route('/vote/<id>/<sentiment>')
+@app.route('/vote')
 def vote():
-    return "work in progress"
+    id = request.args.get('id')
+    senti = request.args.get('sentiment')
+    feed = feed_collection.find_one({'_id' : ObjectId(id)})
+    if senti == 'p':
+        count = feed['pos_count']+1
+        feed = feed_collection.find_one_and_update({'_id' : ObjectId(id)}, {'$set':
+                                                                                {'pos_count': count}})
+    elif senti == 'n':
+        count = feed['neg_count'] + 1
+        feed = feed_collection.find_one_and_update({'_id': ObjectId(id)}, {'$set':
+                                                                               {'neg_count': count}})
+    else :
+        count = feed['neutral_count'] + 1
+        feed = feed_collection.find_one_and_update({'_id': ObjectId(id)}, {'$set':
+                                                                               {'neutral_count': count}})
+    return 'OK'
 
 
 def populate_news_feed():
