@@ -1,0 +1,153 @@
+nav{
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+
+
+}
+
+#emailsSubscriptionChart .ct-chart-bar .ct-label.ct-horizontal.ct-end{
+    font-size:10px;
+}
+
+.loader {
+    position:   fixed;
+    z-index:    10000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+        url('../images/loading.gif')
+        50% 50%
+        no-repeat;
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  /* margin: 10px; */
+  right: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #14b7cb;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 16px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+
+.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut{
+
+    stroke-dasharray: 5;
+}
+
+.title span{
+   transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.small.predictions{
+    font-size: 10px;
+
+        transition: all 0.33s linear;
+}
+
+.visuallyhidden{
+
+
+        opacity: 0;
+
+}
+
+
+
+.small, .small i{
+    font-size: 16px;
+}
+
+
+
+.card .card-header{
+    padding:0;
+    cursor:pointer
+
+}
+.card-header-divs.active{
+        background: #0d6ec0;
+    color: white;
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+}
+.card-header-divs{
+     padding: 15px;
+    background: #bcbcbc;
+    color: #787873;
+
+}
+.card-header-divs:hover{
+ box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+}
+
+.rotate-left {
+  transform: rotate(30deg) scale(0.8);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+  z-index: 10;
+}
+.rotate-right {
+  transform:  scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+  z-index: 10;
+}

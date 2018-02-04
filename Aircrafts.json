@@ -1,0 +1,450 @@
+[
+ {
+   "aircraft_registration_id": 100001,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100002,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100003,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100004,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100005,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100006,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100007,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100008,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100009,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100010,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100011,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100012,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100013,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100014,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100015,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100016,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100017,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100018,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100019,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100020,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100021,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100022,
+   "aircraft_type": "Airbus A330-300"
+ },
+ {
+   "aircraft_registration_id": 100023,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100024,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100025,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100026,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100027,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100028,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100029,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100030,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100031,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100032,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100033,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100034,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100035,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100036,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100037,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100038,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100039,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100040,
+   "aircraft_type": "Airbus A350-900"
+ },
+ {
+   "aircraft_registration_id": 100041,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100042,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100043,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100044,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100045,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100046,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100047,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100048,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100049,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100050,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100051,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100052,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100053,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100054,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100055,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100056,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100057,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100058,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100059,
+   "aircraft_type": "Airbus A380-800"
+ },
+ {
+   "aircraft_registration_id": 100060,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100061,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100062,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100063,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100064,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100065,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100066,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100067,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100068,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100069,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100070,
+   "aircraft_type": "Boeing 777-200"
+ },
+ {
+   "aircraft_registration_id": 100071,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100072,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100073,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100074,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100075,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100076,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100077,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100078,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100079,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100080,
+   "aircraft_type": "Boeing 777-200ER"
+ },
+ {
+   "aircraft_registration_id": 100081,
+   "aircraft_type": "Boeing 777-300"
+ },
+ {
+   "aircraft_registration_id": 100082,
+   "aircraft_type": "Boeing 777-300"
+ },
+ {
+   "aircraft_registration_id": 100083,
+   "aircraft_type": "Boeing 777-300"
+ },
+ {
+   "aircraft_registration_id": 100084,
+   "aircraft_type": "Boeing 777-300"
+ },
+ {
+   "aircraft_registration_id": 100085,
+   "aircraft_type": "Boeing 777-300"
+ },
+ {
+   "aircraft_registration_id": 100086,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100087,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100088,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100089,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100090,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100091,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100092,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100093,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100094,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100095,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100096,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100097,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100098,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100099,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100100,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100101,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100102,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100103,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100104,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100105,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100106,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100107,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100108,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100109,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100110,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100111,
+   "aircraft_type": "Boeing 777-300ER"
+ },
+ {
+   "aircraft_registration_id": 100112,
+   "aircraft_type": "Boeing 777-300ER"
+ }
+]

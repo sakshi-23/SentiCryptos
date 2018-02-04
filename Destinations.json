@@ -1,0 +1,374 @@
+﻿[
+ {
+   "City": "Adelaide",
+   "Code": "ADL",
+   "Country": "Australia",
+   "Airport": "Adelaide Airport"
+ },
+ {
+   "City": "Brisbane",
+   "Code": "BNE",
+   "Country": "Australia",
+   "Airport": "Brisbane Airport"
+ },
+ {
+   "City": "Canberra",
+   "Code": "CBR",
+   "Country": "Australia",
+   "Airport": "Canberra International Airport"
+ },
+ {
+   "City": "Melbourne",
+   "Code": "MEL",
+   "Country": "Australia",
+   "Airport": "Melbourne Airport"
+ },
+ {
+   "City": "Perth",
+   "Code": "PER",
+   "Country": "Australia",
+   "Airport": "Perth Airport"
+ },
+ {
+   "City": "Sydney",
+   "Code": "SYD",
+   "Country": "Australia",
+   "Airport": "Sydney Airport"
+ },
+ {
+   "City": "Dhaka",
+   "Code": "DAC",
+   "Country": "Bangladesh",
+   "Airport": "Shahjalal International Airport"
+ },
+ {
+   "City": "Bandar Seri Begawan",
+   "Code": "BWN",
+   "Country": "Brunei Darussalam",
+   "Airport": "Brunei International Airport"
+ },
+ {
+   "City": "Copenhagen",
+   "Code": "CPH",
+   "Country": "Denmark",
+   "Airport": "Copenhagen Airport"
+ },
+ {
+   "City": "Paris",
+   "Code": "CDG",
+   "Country": "France",
+   "Airport": "Charles de Gaulle Airport"
+ },
+ {
+   "City": "Düsseldorf",
+   "Code": "DUS",
+   "Country": "Germany",
+   "Airport": "Düsseldorf Airport"
+ },
+ {
+   "City": "Frankfurt",
+   "Code": "FRA",
+   "Country": "Germany",
+   "Airport": "Frankfurt Airport"
+ },
+ {
+   "City": "Munich",
+   "Code": "MUC",
+   "Country": "Germany",
+   "Airport": "Munich Airport"
+ },
+ {
+   "City": "Hong Kong",
+   "Code": "HKG",
+   "Country": "Hong Kong",
+   "Airport": "Hong Kong International Airport"
+ },
+ {
+   "City": "Ahmedabad",
+   "Code": "AMD",
+   "Country": "India",
+   "Airport": "Sardar Vallabhbhai Patel International Airport"
+ },
+ {
+   "City": "Bengaluru",
+   "Code": "BLR",
+   "Country": "India",
+   "Airport": "Kempegowda International Airport"
+ },
+ {
+   "City": "Chennai",
+   "Code": "MAA",
+   "Country": "India",
+   "Airport": "Chennai International Airport"
+ },
+ {
+   "City": "Delhi",
+   "Code": "DEL",
+   "Country": "India",
+   "Airport": "Indira Gandhi International Airport"
+ },
+ {
+   "City": "Kolkata",
+   "Code": "CCU",
+   "Country": "India",
+   "Airport": "Netaji Subhas Chandra Bose International Airport"
+ },
+ {
+   "City": "Mumbai",
+   "Code": "BOM",
+   "Country": "India",
+   "Airport": "Chhatrapati Shivaji International Airport"
+ },
+ {
+   "City": "Denpasar",
+   "Code": "DPS",
+   "Country": "Indonesia",
+   "Airport": "Ngurah Rai International Airport"
+ },
+ {
+   "City": "Jakarta",
+   "Code": "CGK",
+   "Country": "Indonesia",
+   "Airport": "Soekarno–Hatta International Airport"
+ },
+ {
+   "City": "Surabaya",
+   "Code": "SUB",
+   "Country": "Indonesia",
+   "Airport": "Juanda International Airport"
+ },
+ {
+   "City": "Milan",
+   "Code": "MXP",
+   "Country": "Italy",
+   "Airport": "Milan–Malpensa Airport"
+ },
+ {
+   "City": "Rome",
+   "Code": "FCO",
+   "Country": "Italy",
+   "Airport": "Leonardo da Vinci-Fiumicino Airport"
+ },
+ {
+   "City": "Fukuoka",
+   "Code": "FUK",
+   "Country": "Japan",
+   "Airport": "Fukuoka Airport"
+ },
+ {
+   "City": "Nagoya",
+   "Code": "NGO",
+   "Country": "Japan",
+   "Airport": "Chūbu Centrair International Airport"
+ },
+ {
+   "City": "Osaka",
+   "Code": "KIX",
+   "Country": "Japan",
+   "Airport": "Kansai International Airport"
+ },
+ {
+   "City": "Tokyo",
+   "Code": "HND",
+   "Country": "Japan",
+   "Airport": "Haneda International Airport"
+ },
+ {
+   "City": "Tokyo",
+   "Code": "NRT",
+   "Country": "Japan",
+   "Airport": "Narita International Airport"
+ },
+ {
+   "City": "Kuala Lumpur",
+   "Code": "KUL",
+   "Country": "Malaysia",
+   "Airport": "Kuala Lumpur International Airport"
+ },
+ {
+   "City": "Maldives",
+   "Code": "",
+   "Country": "",
+   "Airport": ""
+ },
+ {
+   "City": "Malé",
+   "Code": "MLE",
+   "Country": "Maldives",
+   "Airport": "Velana International Airport"
+ },
+ {
+   "City": "Yangon",
+   "Code": "RGN",
+   "Country": "Myanmar",
+   "Airport": "Yangon International Airport"
+ },
+ {
+   "City": "Amsterdam",
+   "Code": "AMS",
+   "Country": "Netherlands",
+   "Airport": "Amsterdam Schiphol Airport"
+ },
+ {
+   "City": "Auckland",
+   "Code": "AKL",
+   "Country": "New Zealand",
+   "Airport": "Auckland Airport"
+ },
+ {
+   "City": "Christchurch",
+   "Code": "CHC",
+   "Country": "",
+   "Airport": "Christchurch International Airport"
+ },
+ {
+   "City": "Wellington",
+   "Code": "WLG",
+   "Country": "",
+   "Airport": "Wellington International Airport"
+ },
+ {
+   "City": "Beijing",
+   "Code": "PEK",
+   "Country": "China",
+   "Airport": "Beijing Capital International Airport"
+ },
+ {
+   "City": "Guangzhou",
+   "Code": "CAN",
+   "Country": "China",
+   "Airport": "Guangzhou Baiyun International Airport"
+ },
+ {
+   "City": "Shanghai",
+   "Code": "PVG",
+   "Country": "China",
+   "Airport": "Shanghai Pudong International Airport"
+ },
+ {
+   "City": "Manila",
+   "Code": "MNL",
+   "Country": "Philippines",
+   "Airport": "Ninoy Aquino International Airport"
+ },
+ {
+   "City": "Moscow",
+   "Code": "DME",
+   "Country": "Russia",
+   "Airport": "Domodedovo International Airport"
+ },
+ {
+   "City": "Cape Town",
+   "Code": "CPT",
+   "Country": "South Africa",
+   "Airport": "Cape Town International Airport"
+ },
+ {
+   "City": "Johannesburg",
+   "Code": "JNB",
+   "Country": "South Africa",
+   "Airport": "O. R. Tambo International Airport"
+ },
+ {
+   "City": "Seoul",
+   "Code": "ICN",
+   "Country": "Seoul",
+   "Airport": "Incheon International Airport"
+ },
+ {
+   "City": "Barcelona",
+   "Code": "BCN",
+   "Country": "Spain",
+   "Airport": "Barcelona–El Prat Airport"
+ },
+ {
+   "City": "Colombo",
+   "Code": "CMB",
+   "Country": "Sri Lanka",
+   "Airport": "Bandaranaike International Airport"
+ },
+ {
+   "City": "Stockholm",
+   "Code": "ARN",
+   "Country": "Sweden",
+   "Airport": "Stockholm Arlanda Airport"
+ },
+ {
+   "City": "Zürich",
+   "Code": "ZRH",
+   "Country": "Switzerland",
+   "Airport": "Zürich Airport"
+ },
+ {
+   "City": "Taipei",
+   "Code": "TPE",
+   "Country": "Taiwan",
+   "Airport": "Taiwan Taoyuan International Airport"
+ },
+ {
+   "City": "Bangkok",
+   "Code": "BKK",
+   "Country": "Thailand",
+   "Airport": "Suvarnabhumi Airport"
+ },
+ {
+   "City": "Istanbul",
+   "Code": "IST",
+   "Country": "Turkey",
+   "Airport": "Istanbul Atatürk Airport"
+ },
+ {
+   "City": "Dubai",
+   "Code": "DXB",
+   "Country": "United Arab Emirates",
+   "Airport": "Dubai International Airport"
+ },
+ {
+   "City": "London",
+   "Code": "LHR",
+   "Country": "United Kingdom",
+   "Airport": "London Heathrow Airport"
+ },
+ {
+   "City": "Manchester",
+   "Code": "MAN",
+   "Country": "United Kingdom",
+   "Airport": "Manchester Airport"
+ },
+ {
+   "City": "Houston",
+   "Code": "IAH",
+   "Country": "USA",
+   "Airport": "George Bush Intercontinental Airport"
+ },
+ {
+   "City": "Los Angeles",
+   "Code": "LAX",
+   "Country": "USA",
+   "Airport": "Los Angeles International Airport"
+ },
+ {
+   "City": "New York City",
+   "Code": "JFK",
+   "Country": "USA",
+   "Airport": "John F. Kennedy International Airport"
+ },
+ {
+   "City": "San Francisco",
+   "Code": "SFO",
+   "Country": "USA",
+   "Airport": "San Francisco International Airport"
+ },
+ {
+   "City": "Hanoi",
+   "Code": "HAN",
+   "Country": "Vietnam",
+   "Airport": "Noi Bai International Airport"
+ },
+ {
+   "City": "Ho Chi Minh City",
+   "Code": "SGN",
+   "Country": "Vietnam",
+   "Airport": "Tan Son Nhat International Airport"
+ }
+]
