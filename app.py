@@ -6,7 +6,7 @@ import json
 import pymongo
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-
+from p2p import *
 
 
 
@@ -24,7 +24,7 @@ else:
         uri = json.load(f)['uri']
 client = MongoClient(uri)
 db = client[db_name]
-feed_collection = db['feed']
+feed_collection = db['feed_new']
 #------------------------------
 
 port = int(os.getenv('PORT', 8000))
@@ -43,7 +43,7 @@ def dashboard():
 
 @app.route('/top_feed')
 def top_feed():
-    pos_feed = feed_collection.find().sort('pos_count', pymongo.DESCENDING).limit(5)
+    pos_feed = feed_collection.find({"sentiment":"Positive"}).sort('pos_count', pymongo.DESCENDING).limit(5)
     pres = []
     for pfeed in pos_feed:
         pfeed['id'] = str(pfeed['_id'])
@@ -51,7 +51,7 @@ def top_feed():
         pres.append(pfeed)
 
     nres = []
-    neg_feed = feed_collection.find().sort('neg_count', pymongo.DESCENDING).limit(5)
+    neg_feed = feed_collection.find({"sentiment":"Negative"}).sort('neg_count', pymongo.DESCENDING).limit(5)
     for nfeed in neg_feed:
         nfeed['id'] = str(nfeed['_id'])
         del(nfeed['_id'])
@@ -64,13 +64,10 @@ def top_feed():
 
 @app.route('/feed')
 def feed():
-    feed = feed_collection.find()
-    feedr = []
-    for ifeed in feed:
-        ifeed['id'] = str(ifeed['_id'])
-        del(ifeed['_id'])
-        feedr.append(ifeed)
-    return json.dumps(feedr)
+    feed = feed_collection.find_one({"marked":None})
+    feed['id'] = str(feed['_id'])
+    del (feed['_id'])
+    return json.dumps(feed)
 
 @app.route('/vote')
 def vote():
@@ -78,18 +75,24 @@ def vote():
     senti = request.args.get('sentiment')
     feed = feed_collection.find_one({'_id' : ObjectId(id)})
     if senti == 'p':
-        count = feed['pos_count']+1
+        count = feed['p_count']+1
         feed = feed_collection.find_one_and_update({'_id' : ObjectId(id)}, {'$set':
-                                                                                {'pos_count': count}})
+                                                                                {'pos_count': count,"marked":1}})
     elif senti == 'n':
-        count = feed['neg_count'] + 1
+        count = feed['n_count'] + 1
         feed = feed_collection.find_one_and_update({'_id': ObjectId(id)}, {'$set':
-                                                                               {'neg_count': count}})
+                                                                               {'neg_count': count,"marked":1}})
     else :
         count = feed['neutral_count'] + 1
         feed = feed_collection.find_one_and_update({'_id': ObjectId(id)}, {'$set':
-                                                                               {'neutral_count': count}})
+                                                                               {'neutral_count': count,"marked":1}})
     return 'OK'
+
+
+@app.route('/create')
+def create():
+    n = request.args.get("n")
+    return json.dumps(create_n_records(int(n)))
 
 
 def populate_news_feed():

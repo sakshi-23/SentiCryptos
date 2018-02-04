@@ -276,13 +276,11 @@ $(document).ready( function() {
          $.get("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,LTC,ETH,XLM,ADA,XRP&tsyms=USD", function(data, status){
 
            for (var val in data["RAW"]){
-
-
             $("#"+val).find(".price_usd").html(data["RAW"][val]["USD"]["PRICE"].toFixed(2))
              $("#"+val).find(".vol").html(data["DISPLAY"][val]["USD"]["VOLUME24HOUR"])
-             if (parseFloat(val["CHANGEPCTDAY"])>0)
+             if (parseFloat(data["RAW"][val]["USD"]["CHANGEPCT24HOUR"])>0)
              {
-                change = data["RAW"][val]["USD"]["CHANGEPCTDAY"]+'% <i class="fa fa-long-arrow-up"></i>'
+                change = parseFloat(data["RAW"][val]["USD"]["CHANGEPCT24HOUR"]).toFixed(2)+'% <i class="fa fa-long-arrow-up"></i>'
                 $("#"+val).find(".change").removeClass("text-danger")
                 $("#"+val).find(".change").addClass("text-success")
                 $("#"+val).find(".card-header").attr("data-background-color","green")
@@ -290,7 +288,7 @@ $(document).ready( function() {
 
              }
              else{
-                change = (parseFloat(data["RAW"][val]["USD"]["CHANGEPCTDAY"])*-1).toFixed(2)+'% <i class="fa fa-long-arrow-down"></i>'
+                change = (parseFloat(data["RAW"][val]["USD"]["CHANGEPCT24HOUR"])*-1).toFixed(2)+'% <i class="fa fa-long-arrow-down"></i>'
                 $("#"+val).find(".change").addClass("text-danger")
                 $("#"+val).find(".change").removeClass("text-success")
                  $("#"+val).find(".card-header").attr("data-background-color","red")
@@ -305,6 +303,87 @@ $(document).ready( function() {
 
 
 //    $("")
+
+
+    $.get("/top_feed", function(data, status){
+        pos=""
+        neg=""
+        data=JSON.parse(data)
+        for (var i in data["top_positive"]){
+            pos+="<tr><td>"+data["top_positive"][i]["headline"]+"</td></tr>"
+
+        }
+        for (var i in data["top_negative"]){
+            neg+="<tr><td>"+data["top_negative"][i]["headline"]+"</td></tr>"
+
+        }
+        $(".negative").html(neg)
+        $(".positive").html(pos)
+
+    });
+
+
+    function callFeed(){
+        $(".card-holder").html(
+        '<div class="card-header"><div class="pull-right"><i class="material-icons icon">compare_arrows</i></div><div class="new-tweet"><p class="tweet-content"></p></div></div>'
+     )
+        $.get("/feed", function(data, status){
+        pos=""
+        neg=""
+        data=JSON.parse(data)
+        dataid=data["id"]
+        $(".tweet-content").html(data["headline"])
+
+    });
+    }
+
+    callFeed();
+
+
+
+
+
+
+        $(".card-holder").on("swiperight",".card-header",function(e){
+         $("#fivenot").html("");
+         $("#fivenot").addClass("hidden");
+
+        $(this).css({"-webkit-transform":"translate("+e.swipestop.coords[0]+"px,0)"})
+
+         $(this).addClass('rotate-left').delay(500).fadeOut(1);
+
+
+           $.get("/vote?sentiment=p&id="+dataid, function(data, status){
+
+            setTimeout(function(){  callFeed();}, 3000);
+
+
+
+
+
+          });
+
+
+      });
+
+          $(".card-holder").on("swipeleft",".card-header",function(e){
+
+          $("#fivenot").html("");
+         $("#fivenot").addClass("hidden");
+
+            $(this).css({"-webkit-transform":"translate(-"+e.swipestop.coords[0]+"px,0)"})
+
+             $(this).addClass('rotate-right').delay(500).fadeOut(1);
+              $.get("/vote?sentiment=n&id="+dataid, function(data, status){
+                  setTimeout(function(){  callFeed();}, 3000);
+
+
+            });
+
+
+
+      });
+
 
 
 
