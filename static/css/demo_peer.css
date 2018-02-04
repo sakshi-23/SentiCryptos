@@ -84,7 +84,7 @@ a:hover{
 
 .logo{
      border-right: 2px solid #383838;
-     background: #1d1d1d;
+
 }
 
 .container-fluid{
@@ -131,3 +131,4 @@ display: inline-block;
 .token-name span.form-control{
     display:none;
 }
+

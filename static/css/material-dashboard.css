@@ -5254,6 +5254,8 @@ footer .btn {
     position: relative;
     top: 4px;
     font-size: 16px;
+    right: -22px;
+    position: absolute;
 }
 
 .card .card-footer h6 {
