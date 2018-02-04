@@ -1,5 +1,0 @@
----
-applications:
- - name: SplitPay
-   host: splitpay
-   memory: 512M
